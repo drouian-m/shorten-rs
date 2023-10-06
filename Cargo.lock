@@ -938,6 +938,7 @@ dependencies = [
  "nanoid",
  "serde",
  "tokio",
+ "url",
 ]
 
 [[package]]
