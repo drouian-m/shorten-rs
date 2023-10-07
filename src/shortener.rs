@@ -40,7 +40,7 @@ impl Shortener {
         Ok(u)
     }
 
-    fn is_valid_url(&self, url_str: &String) -> Result<(), String> {
+    fn is_valid_url(&self, url_str: &str) -> Result<(), String> {
         match Url::parse(url_str) {
             Ok(_) => Ok(()),
             Err(_) => Err("Invalid URL".to_owned()),

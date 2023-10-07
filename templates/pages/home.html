@@ -1,0 +1,18 @@
+{% extends "layout/home_layout.html" %}
+
+{% block content %}
+<section>
+<h1>Welcome</h1>
+
+<form action="/ui/generated" method="post">  
+    <!-- Markup example 2: input is after label -->
+    <label for="url">Your URL</label>
+    <input type="text" id="url" name="url" placeholder="Your original URL" required>
+  
+    <!-- Button -->
+    <button type="submit">Shorten !</button>
+  
+  </form>
+</section>
+
+{% endblock content %}
